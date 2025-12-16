@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*", // later replace with frontend domain
+    origin: "web-audit-frontend-p4a43rf78-vishals-projects-7d2506b1.vercel.app", 
   })
 );
 app.use(express.json());
