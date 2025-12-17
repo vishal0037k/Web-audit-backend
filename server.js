@@ -9,9 +9,15 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*", // later replace with frontend domain
+    origin: [
+      "https://webaudit.itxsential.com",
+      "https://web-audit-frontend-p4a43rf78-vishals-projects-7d2506b1.vercel.app"
+    ],
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
   })
 );
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
