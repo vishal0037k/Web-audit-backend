@@ -10,6 +10,7 @@ const app = express();
 app.use(
   cors({
     origin: [
+       "http://localhost:5173", 
       "https://webaudit.itxsential.com",
       "https://web-audit-frontend-p4a43rf78-vishals-projects-7d2506b1.vercel.app"
     ],
